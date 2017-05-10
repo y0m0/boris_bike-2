@@ -44,4 +44,9 @@ describe DockingStation do
       expect { subject.dock(Bike.new) }.to raise_error("Docking station full")
     end
   end
+
+  it "set the maximum capacity of the docking station" do
+    expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY 
+  end
+
 end
