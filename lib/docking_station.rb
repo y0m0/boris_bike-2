@@ -2,9 +2,7 @@ require './lib/bike.rb'
 
 class DockingStation
 
-  def bike
-    @bike
-  end
+  attr_reader :bike
 
   def release_bike
     Bike.new
